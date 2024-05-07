@@ -8,19 +8,23 @@
 # а также переопределите функцию horse_powers
 
 class Car:
-
     price = 1000000
-    horse_powers = 100
+
+    def __init__(self):
+        self.horse_powers = 100
 
 class Nissan(Car):
-
     price = 1500000
-    horse_powers = 150
+
+    def __init__(self):
+        self.horse_powers = 150
 
 class Kia(Car):
-
     price = 1300000
-    horse_powers = 120
+
+    def __init__(self):
+        self.horse_powers = 130
+
 
 car = Car()
 nissan = Nissan()
